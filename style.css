@@ -1,0 +1,395 @@
+/* -- Overall styles -- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#F7F6F5;
+    font-family: "Josefin Sans", "Helvetica", sans-serif;
+    font-weight: 100;
+    color: #444444;
+    font-size: 14px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    color: #88936E;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans Condensed", "Helvetica", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+
+}
+
+/* -- Header styles -- */
+
+header {
+    /* height: 150px; */
+    /* height: 20vh; */
+    background-color: #F7F6F5;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    box-shadow: 0px 3px 4px 0px rgba(175, 182, 157, .63);
+}
+
+.logo-wrap {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 30%;
+}
+
+nav {
+    width: 90%;
+    margin: 30 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 5;
+    margin-right: 100px;
+}
+
+.menu li {
+    flex-grow: 1;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.drop {
+    display: none;
+    background-color: #F7F6F5;
+    box-shadow: 0px 4px 3px 0px rgba(175, 182, 157, .63);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.drop li {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+.serv:hover .drop,
+.destinations:hover .drop {
+    display: block;
+    position: fixed;
+    /* width: auto; */
+}
+
+.socials {
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.socials a {
+    color: #C4C1BC;
+}
+
+.socials a:hover {
+    color: #88936E;
+}
+
+/* -- Main styles -- */
+
+main {
+    margin: 0 auto;
+    position: relative;
+    top: 170px;
+    z-index: 1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#instagram {
+    height: 120px;
+    /* background-color: #3e3; */
+    border-bottom: 1px solid #000;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.quote {
+    margin: 20px;
+    /* text-transform: uppercase; */
+}
+
+.about {
+    background-color: #ACB398;
+    box-shadow: 8px 8px 0px 0px #EFECEA;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    max-height: 300px;
+}
+
+.about video {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.about-text {
+    flex-basis: 0;
+    flex-grow: 1;
+    /* align-self: stretch; */
+    padding: 30px;
+    font-weight: 100;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.about-text .title {
+    border-bottom: .5px solid #88936E;
+    display: inline-block;
+    margin: 15px;
+    padding-bottom: 5px;
+}
+
+.services {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.s-title {
+    margin-top: 40px;
+}
+
+hr {
+    width: 60px;
+    color: #88936E;
+    margin: 0 auto;
+}
+
+.service-block {
+    background-color: #EFECEA;
+    /* background-color: #D1D6C1; */
+    width: 30%;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 5%;
+    box-shadow: 3px 3px 0px 0px #D1D6C1;
+    /* box-shadow: 5px 5px 0px 0px #EFECEA; */
+}
+
+.service-block i {
+    font-size: 200%;
+    margin: 10px;
+}
+
+.picture {
+    width: 100%;
+}
+
+/* -- Contact form styles -- */
+
+.contact {
+    margin-bottom: 30px;
+}
+
+.contact h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#responsive-form{
+    width: 40%;
+    margin: 0 auto;
+}
+.form-row{
+	width: 100%;
+}
+.column-half, .column-full{
+	float: left;
+	position: relative;
+	padding: 0.65rem;
+	width:100%;
+	-webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/** Media query for form **/
+@media only screen and (min-width: 48em) {
+	.column-half{
+		width: 50%;
+	}
+}
+
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #FFF;
+    border: none;
+    box-shadow: 1px 1px 4px 0px rgba(136, 147, 110, 0.2);
+    font-family: inherit;
+    font-weight: 100;
+    color: #444444;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: .8em;
+}
+
+input[type=submit] {
+    background-color: #D1D6C1;
+    box-shadow: 2px 2px 0px 0px #EFECEA;
+    color: #FFF;
+    padding: 5px;
+    font-family: "Josefin Sans", "Helvetica", sans-serif;
+    font-size: .75em;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 170px;
+    border-top: 1px solid #D1D6C1;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 4%;
+    margin: 6px;
+}
+
+.copyright {
+    display: flex;
+    flex-grow: 5;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .75em;
+}
+
+/* -- Media queries -- */
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        font-size: 2em;
+    }
+
+    #responsive-form {
+        width: 60%;
+    }
+
+    .container {
+      /* width: 95%; */
+    }
+
+    .service-block {
+        width: 100%;
+    }
+
+    li, i {
+        font-size: .5em;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    li, i {
+        font-size: .75em;
+    }
+
+    .menu {
+        margin-right: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .about {
+        display: block;
+        max-height: 1000px;
+    }
+
+    .about video {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .about-text {
+        display: block;
+        width: 100%;
+    }
+
+    #instagram {
+        display: none;
+    }
+
+    .quote {
+        margin-top: 10px;
+    }
+
+    .services {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .service-block {
+        width: 100%;
+        margin: 5px 8px 20px 8px;
+    }
+
+    .service-section hr {
+        margin-bottom: 25px;
+    }
+
+    .picture {
+        margin-top: 20px;
+    }
+}
